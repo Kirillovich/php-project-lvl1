@@ -1,0 +1,20 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet php-lvl1",
+    "license": "MIT",
+    "type": "project",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kirillov"
+        }
+    ],
+    "require": {}
+}
