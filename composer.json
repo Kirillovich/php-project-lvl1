@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "Php\\L1\\": "src/"
         }
     },
     "authors": [
@@ -16,5 +16,7 @@
             "name": "Kirillov"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.17"
+    }
 }
