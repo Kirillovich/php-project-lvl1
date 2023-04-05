@@ -11,6 +11,7 @@ function core(string $rules, array $data)
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?', false, ' ');
     line("Hello, {$name}!");
+    line($rules);
 
     $lengthEnd = count($data) - 1;
     $rounds = 3;
