@@ -8,7 +8,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-require_once './src/games/Progression.php';
+require_once __DIR__ . '/../src/games/Progression.php';
 
 use function BrainGames\Games\Progression\play;
 
