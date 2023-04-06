@@ -21,7 +21,7 @@ function core(string $rules, array $data)
         [$question, $verity] = $data[$position];
         line("Question: {$question}");
         $answer = prompt('Your answer:', false, ' ');
-        if ($answer === $verity) {
+        if ($answer === (string) $verity) {
             line('Correct!');
             if ($rounds === 1) {
                 line("Congratulations, {$name}!");
