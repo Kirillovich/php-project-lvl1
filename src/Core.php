@@ -9,7 +9,7 @@ use function cli\prompt;
 function core(string $rules, array $data)
 {
     line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?', false, ' ');
+    $name = prompt('May I have your name?');
     line("Hello, {$name}!");
     line($rules);
 
@@ -20,7 +20,7 @@ function core(string $rules, array $data)
         $position = rand(0, $lengthEnd);
         [$question, $verity] = $data[$position];
         line("Question: {$question}");
-        $answer = prompt('Your answer:', false, ' ');
+        $answer = prompt('Your answer');
         if ($answer === (string) $verity) {
             line('Correct!');
             if ($rounds === 1) {
