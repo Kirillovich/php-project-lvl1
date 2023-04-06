@@ -10,7 +10,7 @@ use function BrainGames\Core\core;
 const RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 
-function primeCheck($number)
+function primeCheck(int $number)
 {
     if ($number == 1) {
         return 0;
