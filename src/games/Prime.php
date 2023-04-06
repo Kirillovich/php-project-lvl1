@@ -9,6 +9,22 @@ use function BrainGames\Core\core;
 
 const RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
+
+function primeCheck($number)
+{
+    if ($number == 1) {
+        return 0;
+    }
+
+    for ($i = 2; $i <= sqrt($number); $i++) {
+        if ($number % $i == 0) {
+            return 0;
+        }
+    }
+
+    return 1;
+}
+
 function generateData($length = 10)
 {
     $data = [];
@@ -16,7 +32,7 @@ function generateData($length = 10)
 
     while ($count < $length) {
         $num = rand(1, 15);
-        if (gmp_prob_prime($num) === 2) {
+        if (primeCheck($num) === 1) {
             $data[] = [$num, 'yes'];
         } else {
             $data[] = [$num, 'no'];
