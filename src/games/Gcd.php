@@ -9,7 +9,7 @@ use function BrainGames\Core\core;
 
 const RULES = 'Find the greatest common divisor of given numbers.';
 
-function generateData($length = 10)
+function generateData(int $length = 10)
 {
     $data = [];
     $count = 0;

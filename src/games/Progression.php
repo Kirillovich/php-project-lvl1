@@ -9,7 +9,7 @@ use function BrainGames\Core\core;
 
 const RULES = 'What number is missing in the progression?';
 
-function generateData($length = 10)
+function generateData(int $length = 10)
 {
     $data = [];
     $count = 0;

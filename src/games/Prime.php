@@ -25,7 +25,7 @@ function primeCheck($number)
     return 1;
 }
 
-function generateData($length = 10)
+function generateData(int $length = 10)
 {
     $data = [];
     $count = 0;

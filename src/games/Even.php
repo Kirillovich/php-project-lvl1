@@ -9,7 +9,7 @@ use function BrainGames\Core\core;
 
 const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function generateData($length = 10)
+function generateData(int $length = 10)
 {
     $data = [];
     $count = 0;
