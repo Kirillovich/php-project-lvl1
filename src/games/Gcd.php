@@ -3,7 +3,7 @@
 // phpcs:disable PSR1.Files.SideEffects
 namespace BrainGames\Games\Gcd;
 
-require_once './src/Core.php';
+require_once __DIR__ . '/../../src/Core.php';
 
 use function BrainGames\Core\core;
 
